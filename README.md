@@ -1,4 +1,4 @@
-# isEven---Python
+# isEven - Python
 Different implementations of isEven in python.
 
 Files should be named in order.
