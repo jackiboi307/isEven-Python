@@ -1,12 +1,6 @@
 def isEven(num):
-    x = "X" * num
-    x = list(x)
-    try:
-        x[len(x)//2] = " "
-    except:
-        return True
-    x = "".join(x)
-    try:
-        return not x.split(" ")[0] == x.split(" ")[1]
-    except:
-        return False
+    s = ([" "] * num)[:]
+    s[num//2] = "X"
+    return not len(("".join(s).split("X"))[0]) == len(("".join(s).split("X"))[1])
+    
+# doesn't work for the number 0 or any negative
