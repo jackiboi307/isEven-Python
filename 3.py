@@ -1,6 +1,4 @@
 def isEven(num):
-    s = ([" "] * num)[:]
-    s[num//2] = "X"
-    return not len(("".join(s).split("X"))[0]) == len(("".join(s).split("X"))[1])
+    return len(([""]*num)[:num//2]) == len(([""]*num)[num//2:])
     
-# doesn't work for the number 0 or any negative
+# doesn't work for any negative
